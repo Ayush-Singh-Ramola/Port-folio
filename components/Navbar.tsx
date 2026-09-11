@@ -50,7 +50,7 @@ export default function Navbar({ isLoaded = true }: NavbarProps) {
             >
                 <div className="relative nav-avatar-wrapper group">
                     <Link
-                        href={isHome && !scrolled ? '#' : '/portfolio'}
+                        href="/portfolio"
                         onClick={handleAvatarClick}
                         className="hover:scale-105 transition-transform block shrink-0"
                     >

@@ -1,5 +1,6 @@
 import ThemeProvider from "@/components/ThemeProvider";
 import ClientCursorProvider from "@/components/ClientCursorProvider";
+import ClickSoundProvider from "@/components/ClickSoundProvider";
 import type { Metadata } from "next";
 import { Dancing_Script, Geist_Mono } from "next/font/google";
 import Script from "next/script";
@@ -75,6 +76,7 @@ export default function RootLayout({
         className={`${geistMono.variable} ${dancingScript.variable} antialiased`}
       >
         <ThemeProvider>
+          <ClickSoundProvider />
           {children}
           <ClientCursorProvider />
         </ThemeProvider>
